@@ -1,11 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>EQUITY LAB COMING SOON</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Blue Dream</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to apply the Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom pastel colors */
+        .bg-pastel-blue-light { background-color: #E0F7FA; }
+        .bg-pastel-blue-medium { background-color: #B2EBF2; }
+        .text-pastel-blue-dark { color: #00796B; }
+        .border-pastel-blue-dark { border-color: #00796B; }
+        .hover-bg-pastel-blue-dark:hover { background-color: #00796B; }
+        .hover-text-white:hover { color: #FFFFFF; }
+    </style>
 </head>
-<body style="background-color: #B6D0E2">
-    <h1>EQUITY LAB COMING SOON</h1>
+<body class="bg-pastel-blue-light text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-pastel-blue-dark">Serenity</h1>
+            <nav>
+                <a href="#about" class="mx-2 text-gray-600 hover:text-pastel-blue-dark">About</a>
+                <a href="#services" class="mx-2 text-gray-600 hover:text-pastel-blue-dark">Services</a>
+                <a href="#contact" class="mx-2 text-gray-600 hover:text-pastel-blue-dark">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section class="text-center mb-16">
+            <h2 class="text-5xl font-extrabold text-pastel-blue-dark mb-4">Discover a World of Calm</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Welcome to a place of peace and tranquility. This is a demonstration of a beautifully formatted, static webpage using pastel colors.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="mb-16 p-8 bg-white rounded-lg shadow-lg">
+            <h3 class="text-3xl font-bold text-pastel-blue-dark mb-4">About This Page</h3>
+            <p class="text-gray-700 leading-relaxed">
+                This webpage is designed to be aesthetically pleasing, with a focus on clean lines, ample whitespace, and a soothing color palette. The use of pastel blue creates a sense of calm and clarity, making the content easy to read and digest. We believe that good design is unobtrusive and serves to enhance the user's experience. This page is a testament to that philosophy, proving that simplicity can be powerful and beautiful.
+            </p>
+        </section>
+
+        <!-- Services/Features Section -->
+        <section id="services" class="mb-16">
+            <h3 class="text-3xl font-bold text-center text-pastel-blue-dark mb-8">Our Features</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="mb-4">
+                        <svg class="w-16 h-16 mx-auto text-pastel-blue-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-pastel-blue-dark mb-2">Clean Code</h4>
+                    <p class="text-gray-600">Built with modern HTML5 and Tailwind CSS for a highly maintainable and scalable structure.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                     <div class="mb-4">
+                        <svg class="w-16 h-16 mx-auto text-pastel-blue-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-pastel-blue-dark mb-2">Pastel Palette</h4>
+                    <p class="text-gray-600">A carefully selected pastel blue color scheme that is easy on the eyes and promotes a sense of calm.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                    <div class="mb-4">
+                        <svg class="w-16 h-16 mx-auto text-pastel-blue-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-pastel-blue-dark mb-2">Fully Responsive</h4>
+                    <p class="text-gray-600">Looks great on all devices, from mobile phones to desktop monitors, thanks to responsive design.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center bg-pastel-blue-medium p-8 rounded-lg shadow-inner">
+            <h3 class="text-3xl font-bold text-white mb-4">Get In Touch</h3>
+            <p class="text-gray-700 mb-6">Have questions? We'd love to hear from you. Reach out to us anytime.</p>
+            <a href="#" class="bg-white text-pastel-blue-dark font-bold py-3 px-6 rounded-full shadow-lg hover-bg-pastel-blue-dark hover-text-white transition duration-300">Contact Us</a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-12">
+        <div class="container mx-auto px-6 py-4 text-center text-gray-600">
+            <p>&copy; 2025 Serenity. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
+</html>
